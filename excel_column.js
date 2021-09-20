@@ -46,3 +46,31 @@ const getColumn = (str) => {
 };
 
 console.log(getColumn("aaa"));
+
+const numberArray = [10, 2, 20, 32, 1, 0];
+const newArr = [];
+
+// Fonction qui renvoie le plus grand élément du tableau
+// L'ajouter dans un nouveau tableau
+// Le supprimer dans l'ancien tableau
+const orderArrar = (arr) => {
+  for (let index = 0; index < arr.length; index++) {
+    const currentElement = arr[index];
+
+    for (let j = 0; j < arr.length; j++) {
+      const element = arr[j];
+      if (element != currentElement && currentElement < element) {
+        arr.push(currentElement);
+        arr.splice(j, 1);
+
+      } 
+      else if(element != currentElement && currentElement > element) {
+        arr.unshift(element);
+        arr.splice(j, 1);
+      } 
+    }
+  }
+  return arr;
+};
+
+console.log(orderArrar(numberArray));

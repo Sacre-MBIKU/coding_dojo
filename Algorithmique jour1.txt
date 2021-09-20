@@ -1,0 +1,11 @@
+1. - Cela prendra 7 étapes maximum pour trouver;
+   - log(n)
+
+2. a. 1. Linéaire : n ms
+      2. Binaire : log(n)
+   b. : n ms
+   c. : n ms
+
+3. a. la taille est de : n*2 ms
+   b. n1 + n2
+
